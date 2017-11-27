@@ -13,6 +13,7 @@
 		0CDD09051FCBF91B00D0F2BA /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 0CDD09041FCBF91B00D0F2BA /* Assets.xcassets */; };
 		0CDD09081FCBF91B00D0F2BA /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 0CDD09061FCBF91B00D0F2BA /* LaunchScreen.storyboard */; };
 		0CDD090B1FCBF91B00D0F2BA /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 0CDD090A1FCBF91B00D0F2BA /* main.m */; };
+		0CDD09141FCBF9FA00D0F2BA /* XtwSdk.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0CDD09131FCBF9FA00D0F2BA /* XtwSdk.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -26,6 +27,7 @@
 		0CDD09071FCBF91B00D0F2BA /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		0CDD09091FCBF91B00D0F2BA /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		0CDD090A1FCBF91B00D0F2BA /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		0CDD09131FCBF9FA00D0F2BA /* XtwSdk.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = XtwSdk.framework; path = tahuoxinggeH5/XtwSdk.framework; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -33,6 +35,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				0CDD09141FCBF9FA00D0F2BA /* XtwSdk.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -42,6 +45,7 @@
 		0CDD08EF1FCBF91B00D0F2BA = {
 			isa = PBXGroup;
 			children = (
+				0CDD09131FCBF9FA00D0F2BA /* XtwSdk.framework */,
 				0CDD08FA1FCBF91B00D0F2BA /* tahuoxinggeH5 */,
 				0CDD08F91FCBF91B00D0F2BA /* Products */,
 			);
@@ -280,7 +284,12 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = 75YUB6PCBP;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/tahuoxinggeH5",
+				);
 				INFOPLIST_FILE = tahuoxinggeH5/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.lingyu8.tahuoxinggeH5;
 				PRODUCT_NAME = "$(TARGET_NAME)";
@@ -294,7 +303,12 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = 75YUB6PCBP;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/tahuoxinggeH5",
+				);
 				INFOPLIST_FILE = tahuoxinggeH5/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.lingyu8.tahuoxinggeH5;
 				PRODUCT_NAME = "$(TARGET_NAME)";
