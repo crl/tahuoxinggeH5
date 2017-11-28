@@ -14,6 +14,8 @@
 		0CDD09081FCBF91B00D0F2BA /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 0CDD09061FCBF91B00D0F2BA /* LaunchScreen.storyboard */; };
 		0CDD090B1FCBF91B00D0F2BA /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 0CDD090A1FCBF91B00D0F2BA /* main.m */; };
 		0CDD09141FCBF9FA00D0F2BA /* XtwSdk.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0CDD09131FCBF9FA00D0F2BA /* XtwSdk.framework */; };
+		0CDD09161FCD117500D0F2BA /* extends in Resources */ = {isa = PBXBuildFile; fileRef = 0CDD09151FCD117400D0F2BA /* extends */; };
+		0CDD09181FCD117F00D0F2BA /* logo.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 0CDD09171FCD117F00D0F2BA /* logo.jpg */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -28,6 +30,8 @@
 		0CDD09091FCBF91B00D0F2BA /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		0CDD090A1FCBF91B00D0F2BA /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		0CDD09131FCBF9FA00D0F2BA /* XtwSdk.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = XtwSdk.framework; path = tahuoxinggeH5/XtwSdk.framework; sourceTree = "<group>"; };
+		0CDD09151FCD117400D0F2BA /* extends */ = {isa = PBXFileReference; lastKnownFileType = folder; name = extends; path = tahuoxinggeH5/extends; sourceTree = "<group>"; };
+		0CDD09171FCD117F00D0F2BA /* logo.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = logo.jpg; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -45,6 +49,7 @@
 		0CDD08EF1FCBF91B00D0F2BA = {
 			isa = PBXGroup;
 			children = (
+				0CDD09151FCD117400D0F2BA /* extends */,
 				0CDD09131FCBF9FA00D0F2BA /* XtwSdk.framework */,
 				0CDD08FA1FCBF91B00D0F2BA /* tahuoxinggeH5 */,
 				0CDD08F91FCBF91B00D0F2BA /* Products */,
@@ -71,6 +76,7 @@
 				0CDD09061FCBF91B00D0F2BA /* LaunchScreen.storyboard */,
 				0CDD09091FCBF91B00D0F2BA /* Info.plist */,
 				0CDD090A1FCBF91B00D0F2BA /* main.m */,
+				0CDD09171FCD117F00D0F2BA /* logo.jpg */,
 			);
 			path = tahuoxinggeH5;
 			sourceTree = "<group>";
@@ -134,7 +140,9 @@
 			buildActionMask = 2147483647;
 			files = (
 				0CDD09081FCBF91B00D0F2BA /* LaunchScreen.storyboard in Resources */,
+				0CDD09181FCD117F00D0F2BA /* logo.jpg in Resources */,
 				0CDD09051FCBF91B00D0F2BA /* Assets.xcassets in Resources */,
+				0CDD09161FCD117500D0F2BA /* extends in Resources */,
 				0CDD09031FCBF91B00D0F2BA /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
