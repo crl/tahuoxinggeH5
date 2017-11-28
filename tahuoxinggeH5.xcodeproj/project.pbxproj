@@ -14,8 +14,13 @@
 		0CDD09081FCBF91B00D0F2BA /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 0CDD09061FCBF91B00D0F2BA /* LaunchScreen.storyboard */; };
 		0CDD090B1FCBF91B00D0F2BA /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 0CDD090A1FCBF91B00D0F2BA /* main.m */; };
 		0CDD09141FCBF9FA00D0F2BA /* XtwSdk.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0CDD09131FCBF9FA00D0F2BA /* XtwSdk.framework */; };
-		0CDD09161FCD117500D0F2BA /* extends in Resources */ = {isa = PBXBuildFile; fileRef = 0CDD09151FCD117400D0F2BA /* extends */; };
 		0CDD09181FCD117F00D0F2BA /* logo.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 0CDD09171FCD117F00D0F2BA /* logo.jpg */; };
+		0CDD092E1FCD1AA600D0F2BA /* IOSGate.m in Sources */ = {isa = PBXBuildFile; fileRef = 0CDD092D1FCD1AA600D0F2BA /* IOSGate.m */; };
+		0CDD09301FCD1ABD00D0F2BA /* JsonHelper.m in Sources */ = {isa = PBXBuildFile; fileRef = 0CDD092F1FCD1ABD00D0F2BA /* JsonHelper.m */; };
+		0CDD09361FCD1ACB00D0F2BA /* InAppPurchasesManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 0CDD09321FCD1ACA00D0F2BA /* InAppPurchasesManager.m */; };
+		0CDD09381FCD1ADF00D0F2BA /* InAppPurchasesManager.h in Sources */ = {isa = PBXBuildFile; fileRef = 0CDD09351FCD1ACB00D0F2BA /* InAppPurchasesManager.h */; };
+		0CDD09391FCD1ADF00D0F2BA /* IOSGate.h in Sources */ = {isa = PBXBuildFile; fileRef = 0CDD09341FCD1ACB00D0F2BA /* IOSGate.h */; };
+		0CDD093A1FCD1ADF00D0F2BA /* JsonHelper.h in Sources */ = {isa = PBXBuildFile; fileRef = 0CDD09331FCD1ACA00D0F2BA /* JsonHelper.h */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -30,8 +35,13 @@
 		0CDD09091FCBF91B00D0F2BA /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		0CDD090A1FCBF91B00D0F2BA /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		0CDD09131FCBF9FA00D0F2BA /* XtwSdk.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = XtwSdk.framework; path = tahuoxinggeH5/XtwSdk.framework; sourceTree = "<group>"; };
-		0CDD09151FCD117400D0F2BA /* extends */ = {isa = PBXFileReference; lastKnownFileType = folder; name = extends; path = tahuoxinggeH5/extends; sourceTree = "<group>"; };
 		0CDD09171FCD117F00D0F2BA /* logo.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = logo.jpg; sourceTree = "<group>"; };
+		0CDD092D1FCD1AA600D0F2BA /* IOSGate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = IOSGate.m; sourceTree = "<group>"; };
+		0CDD092F1FCD1ABD00D0F2BA /* JsonHelper.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = JsonHelper.m; sourceTree = "<group>"; };
+		0CDD09321FCD1ACA00D0F2BA /* InAppPurchasesManager.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = InAppPurchasesManager.m; sourceTree = "<group>"; };
+		0CDD09331FCD1ACA00D0F2BA /* JsonHelper.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = JsonHelper.h; sourceTree = "<group>"; };
+		0CDD09341FCD1ACB00D0F2BA /* IOSGate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = IOSGate.h; sourceTree = "<group>"; };
+		0CDD09351FCD1ACB00D0F2BA /* InAppPurchasesManager.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = InAppPurchasesManager.h; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -49,7 +59,6 @@
 		0CDD08EF1FCBF91B00D0F2BA = {
 			isa = PBXGroup;
 			children = (
-				0CDD09151FCD117400D0F2BA /* extends */,
 				0CDD09131FCBF9FA00D0F2BA /* XtwSdk.framework */,
 				0CDD08FA1FCBF91B00D0F2BA /* tahuoxinggeH5 */,
 				0CDD08F91FCBF91B00D0F2BA /* Products */,
@@ -67,6 +76,7 @@
 		0CDD08FA1FCBF91B00D0F2BA /* tahuoxinggeH5 */ = {
 			isa = PBXGroup;
 			children = (
+				0CDD092A1FCD1A8000D0F2BA /* ex */,
 				0CDD08FB1FCBF91B00D0F2BA /* AppDelegate.h */,
 				0CDD08FC1FCBF91B00D0F2BA /* AppDelegate.m */,
 				0CDD08FE1FCBF91B00D0F2BA /* ViewController.h */,
@@ -79,6 +89,19 @@
 				0CDD09171FCD117F00D0F2BA /* logo.jpg */,
 			);
 			path = tahuoxinggeH5;
+			sourceTree = "<group>";
+		};
+		0CDD092A1FCD1A8000D0F2BA /* ex */ = {
+			isa = PBXGroup;
+			children = (
+				0CDD09351FCD1ACB00D0F2BA /* InAppPurchasesManager.h */,
+				0CDD09321FCD1ACA00D0F2BA /* InAppPurchasesManager.m */,
+				0CDD09341FCD1ACB00D0F2BA /* IOSGate.h */,
+				0CDD09331FCD1ACA00D0F2BA /* JsonHelper.h */,
+				0CDD092F1FCD1ABD00D0F2BA /* JsonHelper.m */,
+				0CDD092D1FCD1AA600D0F2BA /* IOSGate.m */,
+			);
+			path = ex;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -142,7 +165,6 @@
 				0CDD09081FCBF91B00D0F2BA /* LaunchScreen.storyboard in Resources */,
 				0CDD09181FCD117F00D0F2BA /* logo.jpg in Resources */,
 				0CDD09051FCBF91B00D0F2BA /* Assets.xcassets in Resources */,
-				0CDD09161FCD117500D0F2BA /* extends in Resources */,
 				0CDD09031FCBF91B00D0F2BA /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -154,9 +176,15 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				0CDD09381FCD1ADF00D0F2BA /* InAppPurchasesManager.h in Sources */,
+				0CDD09391FCD1ADF00D0F2BA /* IOSGate.h in Sources */,
+				0CDD093A1FCD1ADF00D0F2BA /* JsonHelper.h in Sources */,
+				0CDD092E1FCD1AA600D0F2BA /* IOSGate.m in Sources */,
 				0CDD09001FCBF91B00D0F2BA /* ViewController.m in Sources */,
 				0CDD090B1FCBF91B00D0F2BA /* main.m in Sources */,
 				0CDD08FD1FCBF91B00D0F2BA /* AppDelegate.m in Sources */,
+				0CDD09301FCD1ABD00D0F2BA /* JsonHelper.m in Sources */,
+				0CDD09361FCD1ACB00D0F2BA /* InAppPurchasesManager.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

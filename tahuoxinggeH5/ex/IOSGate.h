@@ -10,12 +10,11 @@
 #define IOSGate_h
 
 #import <Foundation/Foundation.h>
-#import "UnityInterface.h"
 /*#import <UnityAds/UnityAds.h>
 #import <VungleSDK/VungleSDK.h>
 #import <InMobiSDK/InMobiSDK.h>*/
 
-@interface IOSGate : NSObject//<UnityAdsDelegate,IMBannerDelegate,IMInterstitialDelegate,VungleSDKDelegate>
+@interface IOSGate : NSObject///<,IMBannerDelegate,IMInterstitialDelegate,VungleSDKDelegate>
 
 //@property (nonatomic, strong) IMBanner *banner;
 

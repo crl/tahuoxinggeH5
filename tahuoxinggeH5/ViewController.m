@@ -8,6 +8,9 @@
 
 #import "ViewController.h"
 #import <XtwSdk/XtwSdk.h>
+#import "JsonHelper.h"
+#import "InAppPurchasesManager.h"
+#import "IOSGate.h"
 
 @interface ViewController ()
 
@@ -22,9 +25,8 @@
     NSDate* date=[NSDate date];
     
     NSTimeInterval interval=[date timeIntervalSince1970];
-    
-    
-    NSString* url=[[NSString alloc] initWithFormat:@"http://gate.shushanh5.lingyunetwork.com/gate/micro/login.aspx?t=%d&p=%@",interval,@"ios" ];
+
+    NSString* url=[[NSString alloc] initWithFormat:@"http://gate.shushanh5.lingyunetwork.com/gate/micro/login.aspx?t%f&p=%@",interval,@"ios" ];
     
     //url=@"http://baidu.com";
     

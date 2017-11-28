@@ -1,6 +1,5 @@
 
 #import "InAppPurchasesManager.h"
-#import "Base64.h"
 #import "IOSGate.h"
 
 
@@ -68,9 +67,7 @@ NSMutableDictionary* productDic;
 
 - (void)request:(SKRequest *)request didFailWithError:(NSError *)error
 {
-    UIAlertView* alert = [[UIAlertView alloc] initWithTitle:@"In-App Store unavailable" message:@"The In-App Store is currently unavailable, please try again later." delegate:nil cancelButtonTitle:@"OK" otherButtonTitles:nil, nil];
-    
-    [alert show];
+    [self showAlert:@"The In-App Store is currently unavailable, please try again later."];
 }
 
 #pragma -
@@ -124,7 +121,7 @@ NSMutableDictionary* productDic;
     
     NSString *productIdentifier = transaction.payment.productIdentifier;
     NSData *data=transaction.transactionReceipt;
-    NSString *receipt =[data base64EncodedString];
+    NSString *receipt =[[NSString alloc] initWithData:data encoding:NSUTF8StringEncoding];
 
     //向自己的服务器验证购买凭证
     NSString *postURL=[gameData objectForKey:@"vurl"];
@@ -247,26 +244,18 @@ NSMutableDictionary* productDic;
     }
 }
 
-UIAlertView *alert;
+
 - (void)showAlert:(NSString *)msg {
-    alert = [[UIAlertView alloc] initWithTitle:nil message:msg delegate:self cancelButtonTitle:@"确定" otherButtonTitles:nil, nil];
-    [alert show];
-}
-
-#pragma mark alert delegate
--(void)alertView:(UIAlertView *)alertView didDismissWithButtonIndex:(NSInteger)buttonIndex{
-    errorMsg=nil;
     
-    if ([alertView tag] == 10) {
-        if (buttonIndex == 0) {
-            //todo;
-        }
-    }
-}
-
--(void)alertView:(UIAlertView *)alertView clickedButtonAtIndex:(NSInteger)buttonIndex
-{
+    UIAlertController* alert=[[UIAlertController alloc] init];
     
+    UIAlertAction *sure=[UIAlertAction actionWithTitle:@"ok" style:UIAlertActionStyleDefault handler:nil];
+    
+    [alert addAction:sure];
+    
+    UIViewController* rootViewController=  [[[[UIApplication sharedApplication] delegate] window] rootViewController];
+    
+    [rootViewController presentViewController:alert animated:true completion:nil];
 }
 
 #pragma mark connection delegate

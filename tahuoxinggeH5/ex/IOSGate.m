@@ -25,10 +25,10 @@ NSString* placementId=@"1212892";
 
 NSString* vungleGameID=@"583d2b5b5245aed1640000d9";
 NSString* inMobiGameID=@"52acfac30055466794b83945dc02e579";
-long* inMobiPlacementId=1482330531238;
+long inMobiPlacementId=1482330531238;
 
 NSString* inMobiGameID_intr=@"ae95671162c94b2999341eb3a0fcaacb";
-long* inMobiPlacementId_intr=1482846222141;
+long inMobiPlacementId_intr=1482846222141;
 
 +(IOSGate *) sharedInstance{
     if(_instance==nil){
@@ -282,11 +282,11 @@ static NSString* playerID;
 }
 
 -(void)send:(NSString *)key Value:(NSString *)value{
-    const char* go=[@"UICamera" UTF8String];
-    const char* method=[@"Receive" UTF8String];
-    
-    NSString* msg=[[NSString alloc] initWithFormat:@"%@~%@",key,value];
-    UnitySendMessage(go, method, [msg UTF8String]);
+//    const char* go=[@"UICamera" UTF8String];
+//    const char* method=[@"Receive" UTF8String];
+//
+//    NSString* msg=[[NSString alloc] initWithFormat:@"%@~%@",key,value];
+//    //UnitySendMessage(go, method, [msg UTF8String]);
 }
 
 
@@ -338,10 +338,6 @@ static NSString* playerID;
         [self showBannerAd:value];
     }else if([key isEqual:@"closead"]){
         isCharge=true;
-//        if(self.banner!=nil){
-//            self.banner.delegate=nil;
-//            self.banner.hidden=true;
-//        }
     }else if([key isEqual:@"step"]){
         
         if([value isEqualToString:@"10"]){
@@ -353,45 +349,12 @@ static NSString* playerID;
 
 
 -(void)playAd:(NSString*) v{
-//    VungleSDK* sdk=[VungleSDK sharedSDK];
-//    if([sdk isAdPlayable]){
-//        UIViewController *rootViewController=[[[[UIApplication sharedApplication] delegate] window] rootViewController];
-//        NSError* error;
-//        [sdk playAd:rootViewController error:&error];
-//    }
 }
 
 -(void)showBannerAd:(NSString*) v{
     if(isCharge){
         return;
     }
-//    UIViewController *rootViewController=[[[[UIApplication sharedApplication] delegate] window] rootViewController];
-//    if([v isEqual: @"0"]){
-//        if(self.banner==nil){
-//            CGSize size=[[UIScreen mainScreen] bounds].size;
-//            CGFloat x=(size.width-320)/2;
-//            self.banner = [[IMBanner alloc] initWithFrame:CGRectMake(x, size.height-50, 320, 50)
-//                                              placementId:inMobiPlacementId];
-//            self.banner.delegate = self;
-//            [self.banner shouldAutoRefresh:true];
-//            [self.banner setRefreshInterval:60];
-//            self.banner.transitionAnimation=UIViewAnimationTransitionCurlUp;
-//            [rootViewController.view addSubview:self.banner];
-//        }else{
-//            self.banner.hidden=false;
-//        }
-//        
-//        [self.banner load];
-//    }else{
-//        
-//        if(self.interstitial==nil){
-//            self.interstitial=[[IMInterstitial alloc] initWithPlacementId:inMobiPlacementId_intr];
-//            self.interstitial.delegate=self;
-//            [self.interstitial load];
-//        }
-//        
-//        [self.interstitial showFromViewController:rootViewController];
-//    }
 }
 
 @end
